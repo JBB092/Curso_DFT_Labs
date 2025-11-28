@@ -1,0 +1,205 @@
+# -------------------------------------------------------------------------- #
+#
+# Company: TEC
+# Engineer: Carlos Andrey Morales Zamora
+# 
+# PINOUT DE10-Standard -> 5CSXFC6D6F31C6N
+#
+# -------------------------------------------------------------------------- #
+
+# Clock
+
+set_location_assignment PIN_AF14 -to clk_i
+
+# -------------------------------------------------------------------------- #
+
+# Slide Switches
+
+#SW[0]
+set_location_assignment PIN_AB30 -to op_i[0]
+#SW[1]
+set_location_assignment PIN_Y27 -to op_i[1]
+#SW[2]
+set_location_assignment PIN_AB28 -to op_i[2]
+#SW[3]
+set_location_assignment PIN_AC30 -to op_i[3]
+#SW[4]
+set_location_assignment PIN_W25 -to sw_reg_b_i
+#SW[5]
+set_location_assignment PIN_V25 -to cntrl_alu_i[0]
+#SW[6]
+set_location_assignment PIN_AC28 -to cntrl_alu_i[1]
+#SW[7]
+set_location_assignment PIN_AD30 -to cntrl_alu_i[2]
+#SW[8]
+set_location_assignment PIN_AC29 -to cntrl_alu_i[3]
+#SW[9]
+set_location_assignment PIN_AA30 -to rst_i
+
+# -------------------------------------------------------------------------- #
+
+# Push-buttons
+
+#KEY[0]
+set_location_assignment PIN_AJ4 -to slct_op_i
+#KEY[1]
+set_location_assignment PIN_AK4 -to slct_byte_i
+#KEY[2]
+set_location_assignment PIN_AA14 -to slct_sb_i
+#KEY[3]
+set_location_assignment PIN_AA15  -to en_reg_i
+
+# -------------------------------------------------------------------------- #
+
+# LEDs
+
+#LEDR[0]
+set_location_assignment PIN_AA24 -to sb_op_o
+#LEDR[1]
+set_location_assignment PIN_AB23 -to counter_slct_byte_o[0]
+#LEDR[2]
+set_location_assignment PIN_AC23 -to counter_slct_byte_o[1]
+#LEDR[3]
+set_location_assignment PIN_AD24 -to counter_slct_op_o[0]
+#LEDR[4]
+set_location_assignment PIN_AG25 -to counter_slct_op_o[1]
+#LEDR[5]
+set_location_assignment PIN_AF25 -to flag_o[0]
+#LEDR[6]
+set_location_assignment PIN_AE24 -to flag_o[1]
+#LEDR[7]
+set_location_assignment PIN_AF24 -to flag_o[2]
+#LEDR[8]
+set_location_assignment PIN_AB22 -to flag_o[3]
+#LEDR[9]
+# set_location_assignment PIN_AC22 -to led[9]
+
+# -------------------------------------------------------------------------- #
+
+# 7-segment Displays
+
+#HEX0
+set_location_assignment PIN_W17 -to display_o[0]
+set_location_assignment PIN_V18 -to display_o[1]
+set_location_assignment PIN_AG17 -to display_o[2]
+set_location_assignment PIN_AG16 -to display_o[3]
+set_location_assignment PIN_AH17 -to display_o[4]
+set_location_assignment PIN_AG18 -to display_o[5]
+set_location_assignment PIN_AH18 -to display_o[6]
+#HEX1
+set_location_assignment PIN_AF16 -to display_o[7]
+set_location_assignment PIN_V16 -to display_o[8]
+set_location_assignment PIN_AE16 -to display_o[9]
+set_location_assignment PIN_AD17 -to display_o[10]
+set_location_assignment PIN_AE18 -to display_o[11]
+set_location_assignment PIN_AE17 -to display_o[12]
+set_location_assignment PIN_V17 -to display_o[13]
+#HEX2
+set_location_assignment PIN_AA21 -to display_o[14]
+set_location_assignment PIN_AB17 -to display_o[15]
+set_location_assignment PIN_AA18 -to display_o[16]
+set_location_assignment PIN_Y17 -to display_o[17]
+set_location_assignment PIN_Y18 -to display_o[18]
+set_location_assignment PIN_AF18 -to display_o[19]
+set_location_assignment PIN_W16 -to display_o[20]
+#HEX3
+set_location_assignment PIN_Y19 -to display_o[21]
+set_location_assignment PIN_W19 -to display_o[22]
+set_location_assignment PIN_AD19 -to display_o[23]
+set_location_assignment PIN_AA20 -to display_o[24]
+set_location_assignment PIN_AC20 -to display_o[25]
+set_location_assignment PIN_AA19 -to display_o[26]
+set_location_assignment PIN_AD20 -to display_o[27]
+#HEX4
+set_location_assignment PIN_AD21 -to display_o[28]
+set_location_assignment PIN_AG22 -to display_o[29]
+set_location_assignment PIN_AE22 -to display_o[30]
+set_location_assignment PIN_AE23 -to display_o[31]
+set_location_assignment PIN_AG23 -to display_o[32]
+set_location_assignment PIN_AF23 -to display_o[33]
+set_location_assignment PIN_AH22 -to display_o[34]
+#HEX5
+set_location_assignment PIN_AF21 -to display_o[35]
+set_location_assignment PIN_AG21 -to display_o[36]
+set_location_assignment PIN_AF20 -to display_o[37]
+set_location_assignment PIN_AG20 -to display_o[38]
+set_location_assignment PIN_AE19 -to display_o[39]
+set_location_assignment PIN_AF19 -to display_o[40]
+set_location_assignment PIN_AB21 -to display_o[41]
+
+# -------------------------------------------------------------------------- #
+
+# GPIO
+
+#GPIO[0]
+#	set_location_assignment PIN_W15 -to gpio[0]
+#GPIO[1]
+#	set_location_assignment PIN_AK2 -to gpio[1]
+#GPIO[2]
+#	set_location_assignment PIN_Y16 -to gpio[2]
+#GPIO[3]
+#	set_location_assignment PIN_AK3 -to gpio[3]
+#GPIO[4]
+#	set_location_assignment PIN_AJ1 -to gpio[4]
+#GPIO[5]
+#	set_location_assignment PIN_AJ2 -to gpio[5]
+#GPIO[6]
+#	set_location_assignment PIN_AH2 -to gpio[6]
+#GPIO[7]
+#	set_location_assignment PIN_AH3 -to gpio[7]
+#GPIO[8]
+#	set_location_assignment PIN_AH4 -to gpio[8]
+#GPIO[9]
+#	set_location_assignment PIN_AH5 -to gpio[9]
+#GPIO[10]
+#	set_location_assignment PIN_AG1 -to gpio[10]
+#GPIO[11]
+#	set_location_assignment PIN_AG2 -to gpio[11]
+#GPIO[12]
+#	set_location_assignment PIN_AG3 -to gpio[12]
+#GPIO[13]
+#	set_location_assignment PIN_AG5 -to gpio[13]
+#GPIO[14]
+#	set_location_assignment PIN_AG6 -to gpio[14]
+#GPIO[15]
+#	set_location_assignment PIN_AG7 -to gpio[15]
+#GPIO[16]
+#	set_location_assignment PIN_AG8 -to gpio[16]
+#GPIO[17]
+#	set_location_assignment PIN_AF4 -to gpio[17]
+#GPIO[18]
+#	set_location_assignment PIN_AF5 -to gpio[18]
+#GPIO[19]
+#	set_location_assignment PIN_AF6 -to gpio[19]
+#GPIO[20]
+#	set_location_assignment PIN_AF8 -to gpio[20]
+#GPIO[21]
+#	set_location_assignment PIN_AF9 -to gpio[21]
+#GPIO[22]
+#	set_location_assignment PIN_AF10 -to gpio[22]
+#GPIO[23]
+#	set_location_assignment PIN_AE7 -to gpio[23]
+#GPIO[24]
+#	set_location_assignment PIN_AE9 -to gpio[24]
+#GPIO[25]
+#	set_location_assignment PIN_AE11 -to gpio[25]
+#GPIO[26]
+#	set_location_assignment PIN_AE12 -to gpio[26]
+#GPIO[27]
+#	set_location_assignment PIN_AD7 -to gpio[27]
+#GPIO[28]
+#	set_location_assignment PIN_AD9 -to gpio[28]
+#GPIO[29]
+#	set_location_assignment PIN_AD10 -to gpio[29]
+#GPIO[30]
+#	set_location_assignment PIN_AD11 -to gpio[30]
+#GPIO[31]
+#	set_location_assignment PIN_AD12 -to gpio[31]
+#GPIO[32]
+#	set_location_assignment PIN_AC9 -to gpio[32]
+#GPIO[33]
+#	set_location_assignment PIN_AC12 -to gpio[33]
+#GPIO[34]
+#	set_location_assignment PIN_AB12 -to gpio[34]
+#GPIO[35]
+#	set_location_assignment PIN_AA12 -to gpio[35]

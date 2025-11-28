@@ -52,6 +52,8 @@
 !**/class.ptf
 !*.tbd
 !*.sof
+!*.md
+!*.txt
 ## tbd
 
 !*.tcl

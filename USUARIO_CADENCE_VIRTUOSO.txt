@@ -1,0 +1,4 @@
+puerto:
+172.21.6.221:35
+password
+cm05.3le
